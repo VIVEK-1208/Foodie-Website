@@ -5,17 +5,18 @@ import PlaceOrder from './pages/PlaceOrder/PlaceOrder.jsx'
 import Cart from './pages/Cart/Cart.jsx'
 import Home from './pages/Home/Home.jsx'
 import Footer from './components/Footer/Footer.jsx'
-import Login from './components/Login/Login.jsx'
+import LoginPopup from './components/LoginPopup/LoginPopup.jsx'
+
 
 const App = () => {
 
-  const [login, setLogin] = useState(flase)
+  const [showLogin, setShowLogin] = useState(false)
 
   return (
-    <div>
-      {login?<Login/>:<></>}
+    <>
+      {showLogin?<LoginPopup setShowLogin={setShowLogin} />:<></>}
       <div className='app'>
-        <Navbar setLogin={setLogin}/>
+        <Navbar setShowLogin={setShowLogin} />
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/cart' element={<Cart />} />
@@ -23,7 +24,7 @@ const App = () => {
         </Routes>
       </div>
       <Footer />
-    </div>
+    </>
 
   )
 }
