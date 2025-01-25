@@ -2,6 +2,10 @@
 
 Welcome to the **Foodie Website**! This project is a React-based frontend application for an online food ordering platform. It offers an intuitive and user-friendly interface for users to browse, select, and order their favorite dishes seamlessly.
 
+## Demo Link
+
+Check out the live demo of the Foodie Website: [Foodie Website Demo](your-demo-link-here)
+
 ## Screenshots
 Add screenshots of your website here to showcase its design and functionality. For example:
 
