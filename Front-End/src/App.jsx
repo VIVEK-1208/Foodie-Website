@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Navbar from './components/Navbar/navbar'
+import Navbar from './components/Navbar/Navbar.jsx'
 import { Route, Routes, useSearchParams } from 'react-router-dom'
 import PlaceOrder from './pages/PlaceOrder/PlaceOrder.jsx'
 import Cart from './pages/Cart/Cart.jsx'
